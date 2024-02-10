@@ -7,7 +7,8 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
-    "dev": "tsup src/index.ts --format esm,cjs --dts --watch"
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
+    "lint": "eslint src/**/*.ts* --fix"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
   "devDependencies": {
     "@lmf-design-system-study/tokens": "*",
     "@lmf-design-system-study/ts-config": "*",
+    "@lmf-design-system-study/eslint-config": "*",
     "tsup": "^8.0.2",
     "typescript": "^5.3.3"
   }
