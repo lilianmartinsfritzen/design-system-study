@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@lmf-design-system-study/tokens": "*",
     "tsup": "^8.0.2",
     "typescript": "^5.3.3"
   }
