@@ -1,0 +1,4 @@
+{
+  "extends": "@lmf-design-system-study/ts-config/react.json",
+  "include": ["src"]
+}
