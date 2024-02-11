@@ -10,6 +10,9 @@
     "dev": "storybook dev -p 6006"
   },
   "dependencies": {
+    "@lmf-design-system-study/tokens": "*",
+    "@lmf-design-system-study/react": "*",
+    "@lmf-design-system-study/eslint-config": "*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
