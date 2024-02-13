@@ -13,6 +13,7 @@
     "@lmf-design-system-study/eslint-config": "*",
     "@lmf-design-system-study/react": "*",
     "@lmf-design-system-study/tokens": "*",
+    "@phosphor-icons/react": "^2.0.15",
     "polished": "^4.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
