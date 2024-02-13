@@ -1,8 +1,9 @@
 import type { StoryObj, Meta } from '@storybook/react'
 import { Button, ButtonProps } from '@lmf-design-system-study/react'
+import { ArrowRight } from '@phosphor-icons/react'
 
 export default {
-  title: 'Button',
+  title: 'Form/Button',
   component: Button,
 
   args: {
@@ -12,8 +13,39 @@ export default {
 
 export const Primary: StoryObj<ButtonProps> = {}
 
-export const Large: StoryObj<ButtonProps> = {
+export const Secondary: StoryObj<ButtonProps> = {
   args: {
-    size: 'large',
+    variant: 'secondary',
+    children: 'Criar',
+  },
+}
+
+export const Tertiary: StoryObj<ButtonProps> = {
+  args: {
+    variant: 'tertiary',
+    children: 'Cancel',
+  },
+}
+
+export const Small: StoryObj<ButtonProps> = {
+  args: {
+    size: 'sm',
+  },
+}
+
+export const WithIcon: StoryObj<ButtonProps> = {
+  args: {
+    children: (
+      <>
+        Próximo passo
+        <ArrowRight weight="bold" />
+      </>
+    ),
+  },
+}
+
+export const Disabled: StoryObj<ButtonProps> = {
+  args: {
+    disabled: true,
   },
 }
