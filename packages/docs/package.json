@@ -1,10 +1,11 @@
 {
   "name": "@lmf-design-system-study/docs",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "build-vite": "tsc && vite build",
+    "deploy-storybook": "storybook-to-ghpages",
     "build": "storybook build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "dev": "storybook dev -p 6006"
@@ -27,6 +28,7 @@
     "@storybook/blocks": "^7.6.14",
     "@storybook/react": "^7.6.14",
     "@storybook/react-vite": "^7.6.14",
+    "@storybook/storybook-deployer": "^2.8.16",
     "@storybook/test": "^7.6.14",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
