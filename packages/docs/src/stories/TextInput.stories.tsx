@@ -40,5 +40,6 @@ export const Disabled: StoryObj<TextInputProps> = {
 export const WithPrefix: StoryObj<TextInputProps> = {
   args: {
     prefix: 'mfsoftware.com/',
+    placeholder: 'Digite seu nome de usuário',
   },
 }
