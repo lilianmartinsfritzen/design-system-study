@@ -36,9 +36,11 @@ jobs:
           TURBO_TEAM: lilianmartinsfritzen
 
       - name: Send a Slack notification
-        uses: slackapi/slack-github-action@v1.15.0
+        id: slack
+        uses: slackapi/slack-github-action@v1.25.0
         with:
-          slack-bot-token: ${{ secrets.SLACK_BOT_TOKEN_PUBLISHED_NPM }}
           channel-id: ${{ secrets.SLACK_CHANNEL_ID }}
-          text: "A new version of ${GITHUB_REPOSITORY} was published!"
+          slack-message: "A new version of ${GITHUB_REPOSITORY} was published!"
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
   
