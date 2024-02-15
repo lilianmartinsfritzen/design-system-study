@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build-vite": "tsc && vite build",
-    "deploy-storybook": "storybook-to-ghpages",
+    "deploy-storybook": "storybook-to-ghpages && touch ./storybook-static/.nojekyll",
     "build": "storybook build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "dev": "storybook dev -p 6006"
