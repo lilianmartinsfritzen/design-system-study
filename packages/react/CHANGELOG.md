@@ -1,5 +1,11 @@
 # @lmf-design-system-study/react
 
+## 1.2.2
+
+### Patch Changes
+
+- Passed ref property to input component
+
 ## 1.2.1
 
 ### Patch Changes
