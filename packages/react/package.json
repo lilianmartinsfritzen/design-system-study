@@ -10,9 +10,12 @@
     "dev": "tsup src/index.tsx --format esm,cjs --dts --external react --watch",
     "lint": "eslint src/**/*.ts* --fix"
   },
+  "files": [
+    "dist/**/*"
+  ],
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@lmf-design-system-study/eslint-config": "*",
     "@lmf-design-system-study/tokens": "*",
