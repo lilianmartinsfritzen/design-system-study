@@ -1,5 +1,17 @@
 # @lmf-design-system-study/react
 
+## 1.4.0
+
+### Minor Changes
+
+- removing components and library dependencies
+
+## 1.3.1
+
+### Patch Changes
+
+- correct files published
+
 ## 1.3.0
 
 ### Minor Changes
