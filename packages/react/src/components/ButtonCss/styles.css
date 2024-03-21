@@ -1,0 +1,64 @@
+.button {
+  all: unset;
+  border-radius: 0.875rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: "Nunito-Regular", sans-serif;
+  text-align: center;
+  min-width: 120px;
+  box-sizing: border-box;
+  padding: 0 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  cursor: pointer;
+}
+
+.button svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.button:disabled {
+  background: #a9a9b2;
+  cursor: not-allowed;
+}
+
+.button.primary {
+  color: #fff;
+  background: #0096c7;
+}
+
+.button.primary:not(:disabled):hover {
+  background: #48cae4;
+}
+
+.button.secondary {
+  color: #48cae4;
+  border: 2px solid #0096c7;
+}
+
+.button.secondary:not(:disabled):hover {
+  background: #0096c7;
+  color: #fff;
+}
+
+.button.tertiary {
+  color: var(--gray100);
+  border: 2px solid #7c7c8a;
+}
+
+.button.tertiary:not(:disabled):hover {
+  color: #fff;
+}
+
+.button.sm {
+  height: 38px;
+}
+
+.button.md {
+  height: 46px;
+}
