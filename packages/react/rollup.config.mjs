@@ -22,7 +22,7 @@ export default {
       tsconfig: "./tsconfig.json",
     }),
     postcss({
-      extract: true,
+      extract: false,
       inject: true,
     }),
   ],
