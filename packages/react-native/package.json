@@ -1,0 +1,51 @@
+{
+  "name": "@lmf-design-system-study/react-native",
+  "version": "1.2.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup --config",
+    "dev": "rollup --config --watch",
+    "lint": "eslint src/**/*.ts* --fix"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs.js"
+    },
+    "./Button": {
+      "import": "./dist/buttons/Button.js",
+      "require": "./dist/buttons/Button.cjs.js",
+      "types": "./dist/buttons/Button.d.ts"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@lmf-design-system-study/eslint-config": "*",
+    "@lmf-design-system-study/tokens": "*",
+    "@lmf-design-system-study/ts-config": "*",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/node": "^20.11.30",
+    "@types/react": "^18.2.67",
+    "@types/react-native": "^0.73.0",
+    "react": "17.0.2",
+    "react-native": "^0.68.5",
+    "rollup": "^2.79.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.2"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.2",
+    "react-native": ">=0.68.5"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.62.0"
+  }
+}
