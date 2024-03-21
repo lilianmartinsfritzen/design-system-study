@@ -1,5 +1,11 @@
 # @lmf-design-system-study/react
 
+## 1.5.6
+
+### Patch Changes
+
+- adjustment in type consumption
+
 ## 1.5.5
 
 ### Patch Changes
