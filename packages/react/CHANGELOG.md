@@ -1,5 +1,41 @@
 # @lmf-design-system-study/react
 
+## 1.5.4
+
+### Patch Changes
+
+- test
+
+## 1.5.3
+
+### Patch Changes
+
+- test
+
+## 1.5.2
+
+### Patch Changes
+
+- folder adjustment
+
+## 1.5.1
+
+### Patch Changes
+
+- folder adjustment
+
+## 1.5.0
+
+### Minor Changes
+
+- test
+
+## 2.0.0
+
+### Major Changes
+
+- reformulation of components and types
+
 ## 1.4.0
 
 ### Minor Changes

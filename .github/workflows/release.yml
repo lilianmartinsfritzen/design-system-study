@@ -19,8 +19,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: 'npm'
-          cache-dependency-path: '**/package-lock.json'
+          cache: "npm"
+          cache-dependency-path: "**/package-lock.json"
 
       - run: npm ci
 
@@ -40,7 +40,6 @@ jobs:
         uses: slackapi/slack-github-action@v1.25.0
         with:
           channel-id: ${{ secrets.SLACK_CHANNEL_ID }}
-          slack-message: "A new version of ${GITHUB_REPOSITORY} was published!"
+          slack-message: "A new version of was published!"
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN_PUBLISHED_NPM }}
-  

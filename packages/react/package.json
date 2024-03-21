@@ -1,13 +1,20 @@
 {
   "name": "@lmf-design-system-study/react",
-  "version": "1.4.0",
+  "version": "1.5.2",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "style": "/dist/index.css",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs.js"
+    }
+  },
   "scripts": {
-    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
-    "dev": "tsup src/index.tsx --format esm,cjs --dts --external react --watch",
+    "build": "rollup --config rollup.config.mjs",
+    "dev": "rollup --config rollup.config.mjs -w",
     "lint": "eslint src/**/*.ts* --fix"
   },
   "files": [
@@ -20,9 +27,14 @@
     "@lmf-design-system-study/eslint-config": "*",
     "@lmf-design-system-study/tokens": "*",
     "@lmf-design-system-study/ts-config": "*",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/node": "^20.11.30",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
     "react": "^18.2.0",
+    "rollup": "^4.13.0",
+    "rollup-plugin-postcss": "^4.0.2",
     "tsup": "^8.0.2",
     "typescript": "^5.3.3"
   },
