@@ -1,7 +1,12 @@
 import React from "react";
-import { TouchableOpacity, Text, StyleSheet } from "react-native";
+import {
+  TouchableOpacity,
+  Text,
+  StyleSheet,
+  TouchableOpacityProps,
+} from "react-native";
 
-export interface ButtonProps {
+export interface ButtonProps extends TouchableOpacityProps {
   variant?: "primary" | "secondary" | "tertiary";
   size?: "sm" | "md";
   children: React.ReactNode;
@@ -15,6 +20,7 @@ export const Button = ({
   children,
   isDisabled,
   onPress,
+  ...rest
 }: ButtonProps) => {
   return (
     <TouchableOpacity
@@ -26,6 +32,7 @@ export const Button = ({
       ]}
       disabled={isDisabled}
       onPress={onPress}
+      {...rest}
     >
       <Text style={styles.text}>{children}</Text>
     </TouchableOpacity>
