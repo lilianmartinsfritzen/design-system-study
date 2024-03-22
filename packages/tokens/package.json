@@ -6,8 +6,8 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts",
-    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
+    "build": "tsup src/index.ts --format esm,cjs --dts && copyfiles -u 1 src/css/*.css dist/css/",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch && copyfiles -u 1 src/css/*.css dist/css/ --watch",
     "lint": "eslint src/**/*.ts* --fix"
   },
   "files": [
