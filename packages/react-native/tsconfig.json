@@ -1,12 +1,18 @@
 {
-  "extends": "@lmf-design-system-study/ts-config/react.json",
   "compilerOptions": {
-    "module": "ESNext",
-    "target": "ES6",
-    "declaration": true,
+    "allowJs": true /* Allow javascript files to be compiled. */,
+    "outDir": "./dist", // Diretório para os arquivos JavaScript transpilados
+    "declaration": true, // Gera arquivos .d.ts para declaração de tipos
+    "declarationDir": "./dist/types", // Diretório para os arquivos de declaração de tipos
+    "moduleResolution": "node",
     "esModuleInterop": true,
-    "jsx": "react",
-    "lib": ["dom", "es6", "es2017.object"]
+    "module": "es6",
+    "jsx": "react-native", // Configuração específica para React Native
+    "strict": true,
+    "skipLibCheck": true,
+    "composite": true,
+    "rootDir": "src"
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*.tsx", "src/**/*.ts", "src/index.ts"],
+  "exclude": ["node_modules", "babel.config.js", "metro.config.js", "index.js"]
 }
